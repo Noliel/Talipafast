@@ -7,7 +7,7 @@ const perks = [
   {
     name: 'Instant Delivery',
     Icon: ArrowDownToLine,
-    description: 'Get your order instant within this day',
+    description: 'Get your order within the day',
   },
   {
     name: 'Guaranteed Fresh',
@@ -17,7 +17,7 @@ const perks = [
   {
     name: 'Nature',
     Icon: LeafIcon,
-    description: 'We Help nature',
+    description: 'We Help our nature',
   },
 ]
 
@@ -33,11 +33,11 @@ export default function Home() {
         </span>
       </h1>
       <p className='mt-6 text-lg max-w-prose text-muted-foreground'>
-        Welcome to Talipafast, we're happy to serve.
+        Welcome to Talipafast, we're happy to serve!
       </p>
     <div className='flex flex-col sm:flex-row gap-4 mt-6'>
-      <Link href='/products' className={buttonVariants()}> On Sale</Link>
-      <Button variant='ghost'>Our Fresh Products &rarr;</Button>
+      <Link href='/products' className={buttonVariants()}> Our Fresh Products</Link>
+      <Button variant='ghost'>Other Products &rarr;</Button>
       </div>
     </div>
 
