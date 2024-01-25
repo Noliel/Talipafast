@@ -72,7 +72,7 @@ const Cart = () => {
                             variant:'link', 
                             size:'sm', className:'text-sm text-muted-foreground',
                             })}>
-                                Add Items to your cart to Checkout
+                                Add Items to your cart to checkout
                             </Link>
                     </SheetTrigger>
                 </div>
