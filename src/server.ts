@@ -20,10 +20,13 @@ const start = async () => {
         },
     })
 
-    app.use('/api/trpc', trpcExpress.createExpressMiddleware({
-        router: appRouter,
-        createContext
-    }))
+    app.use(
+        '/api/trpc',
+        trpcExpress.createExpressMiddleware({
+            router: appRouter,
+            createContext,
+         })
+        )
 
     app.use((req, res) => nextHandler(req,res))
 
